@@ -6,23 +6,6 @@ PiWeather provides real-time weather information, automatic location detection, 
 
 ---
 
-## ✨ Features
-
-- 🌍 Automatic location detection
-- 🔎 Search locations worldwide
-- 💾 Save and manage multiple locations
-- 🔄 Switch between saved locations
-- 🌤 Real-time weather updates
-- 🌡 Temperature monitoring
-- 💨 Wind speed information
-- 🌧 Precipitation probability
-- 🌫 Weather condition icons
-- 🎨 Modern colored terminal interface
-- 🖥 Raspberry Pi-inspired dashboard design
-- 🔑 No API keys required
-
----
-
 ## 📸 Preview
 
 ```
