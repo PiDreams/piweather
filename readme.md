@@ -1,66 +1,259 @@
 # 🌦️ PiWeather
 
-PiWeather is a simple terminal weather app that looks like a Raspberry Pi-style device screen.  
-It shows real weather for any city in the world.
+A lightweight terminal-based weather dashboard designed to run like a dedicated Raspberry Pi weather device.
+
+PiWeather provides real-time weather information, automatic location detection, saved locations, and an interactive terminal interface with keyboard controls.
 
 ---
 
-## 🌍 What it does
+## ✨ Features
 
-- Get weather for any city worldwide  
-- Switch between locations using keyboard  
-- Search new cities anytime  
-- Shows temperature, wind, rain, and condition  
-- Runs in the terminal like a mini weather device  
-- No API keys needed  
-
----
-
-## 🖥️ How to run
-
-npm install  
-node index.js  
-
----
-
-## ⌨ Controls
-
-< or →   = Next location  
-> or ←   = Previous location  
-T        = Search for a city  
-Q        = Quit  
+- 🌍 Automatic location detection
+- 🔎 Search locations worldwide
+- 💾 Save and manage multiple locations
+- 🔄 Switch between saved locations
+- 🌤 Real-time weather updates
+- 🌡 Temperature monitoring
+- 💨 Wind speed information
+- 🌧 Precipitation probability
+- 🌫 Weather condition icons
+- 🎨 Modern colored terminal interface
+- 🖥 Raspberry Pi-inspired dashboard design
+- 🔑 No API keys required
 
 ---
 
-## 🌦️ Example output
+## 📸 Preview
 
-PIWEATHER  
-Location: London, United Kingdom  
-Weather: ⛅ Partly Cloudy  
-Temp: 72°F  
-Wind: 5 mph  
-Rain: 20%  
+```
+╭────────────────────────────╮
+│          PIWEATHER         │
+╰────────────────────────────╯
+
+📍 Location
+   South Bend International Airport
+   Indiana, United States
+
+────────────────────────────
+
+🌤 Weather
+   🌫️ Mostly Clear then Patchy Fog
+
+🌡 Temperature
+   62°F
+
+💨 Wind
+   0 to 5 mph
+
+🌧 Rain Chance
+   0%
+
+────────────────────────────
+
+Last updated: 10:42 PM
+
+< Prev     Next >
+
+[T] Add Location
+[L] Locations
+[R] Remove
+[Q] Quit
+```
 
 ---
 
-## ⚙️ Requirements
+# 🚀 Installation
 
-- Node.js  
-- Internet connection  
+## Requirements
 
----
-
-## 🌍 Notes
-
-- Works for all countries  
-- Uses free weather APIs (no keys needed)  
-- Designed to feel like a small weather device (Raspberry Pi style terminal UI)  
+- Node.js 18+
+- npm
+- Internet connection
 
 ---
 
-## 🚀 Future ideas
+## Install
 
-- Save favorite cities  
-- Boot animation  
-- Touchscreen mode for Raspberry Pi  
-- Weather alerts  
+Clone the repository:
+
+```bash
+git clone https://github.com/pidreams/piweather.git
+```
+
+Enter the directory:
+
+```bash
+cd piweather
+```
+
+Run the installer:
+
+```bash
+chmod +x start.sh
+./start.sh
+```
+
+The startup script will:
+
+- Check your environment
+- Install dependencies
+- Create required directories
+- Create storage files
+- Start PiWeather
+
+---
+
+# 🛠 Manual Setup
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start PiWeather:
+
+```bash
+node index.js
+```
+
+---
+
+# ⌨️ Controls
+
+| Key | Action |
+| --- | --- |
+| ← | Previous location |
+| → | Next location |
+| T | Add/search location |
+| L | View saved locations |
+| R | Remove current location |
+| Q | Quit PiWeather |
+
+---
+
+# 🌎 Location Support
+
+PiWeather supports locations worldwide.
+
+Examples:
+
+- United States
+- Canada
+- United Kingdom
+- Europe
+- Asia
+- Australia
+- Any supported city worldwide
+
+Locations can be searched and saved directly inside PiWeather.
+
+---
+
+# 🗂 Project Structure
+
+```
+piweather/
+│
+├── index.js
+├── start.sh
+├── package.json
+├── package-lock.json
+│
+├── src/
+│   ├── api/
+│   │   ├── weather.js
+│   │   ├── geocode.js
+│   │   └── location.js
+│   │
+│   ├── controls/
+│   │   └── keyboard.js
+│   │
+│   ├── storage/
+│   │   └── locations.js
+│   │
+│   └── ui/
+│       └── display.js
+│
+└── data/
+    └── locations.json
+```
+
+---
+
+# 🔧 Storage
+
+PiWeather stores saved locations locally.
+
+Saved locations are stored in:
+
+```
+data/locations.json
+```
+
+Your saved locations will remain available after restarting PiWeather.
+
+---
+
+# 🌐 APIs
+
+PiWeather uses free services that do not require API keys.
+
+Used for:
+
+- Weather data
+- Location searching
+- Automatic location detection
+
+---
+
+# 🖥 Raspberry Pi Support
+
+PiWeather is designed for Raspberry Pi devices and small terminal displays.
+
+Possible uses:
+
+- Raspberry Pi weather station
+- Desktop terminal dashboard
+- Home weather display
+- Dedicated weather device
+
+---
+
+# 🛣 Roadmap
+
+Future features:
+
+- [ ] Touchscreen support
+- [ ] Weather alerts
+- [ ] Radar display
+- [ ] Custom themes
+- [ ] Boot animations
+- [ ] Hardware sensor support
+- [ ] Full kiosk mode
+- [ ] Web dashboard
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+To contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+---
+
+# 📄 License
+
+MIT License
+
+---
+
+# 💙 Created by PiDreams
+
+Built for Raspberry Pi enthusiasts, developers, and anyone who wants a simple weather dashboard in their terminal.
